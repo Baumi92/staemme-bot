@@ -1,6 +1,10 @@
-const puppeteerBot = require('./puppeteerBot');
+// puppeteerBot.js
+const puppeteer = require('puppeteer');
 
-app.get('/start-bot', async (req, res) => {
-  await puppeteerBot.startBot();
-  res.send('Bot gestartet!');
-});
+async function startBot() {
+  // Hier fügst du den eigentlichen Bot-Code ein
+}
+
+module.exports = {
+  startBot,
+};
